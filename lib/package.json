@@ -18,6 +18,7 @@
     "core-js": "^2.4.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
+    "gulp-inline-ng2-template": "^4.0.0",
     "gulp-ngc": "^0.3.0",
     "gulp-typescript": "^3.1.7",
     "rxjs": "5.4.0",

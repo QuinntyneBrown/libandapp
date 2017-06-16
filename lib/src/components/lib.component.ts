@@ -1,9 +1,8 @@
-﻿import { Component } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-    selector: 'lib-cmp',
-    template: `
-    lib component
-  `
+    templateUrl: "./lib.component.html",
+    styleUrls: ["./lib.component.css"],
+    selector: "lib"
 })
 export class LibComponent { }

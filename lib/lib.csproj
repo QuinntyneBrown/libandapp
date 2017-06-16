@@ -78,10 +78,16 @@
     <Content Include="gulpfile.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="src\components\lib.component.css">
+      <DependentUpon>lib.component.html</DependentUpon>
+    </Content>
     <Content Include="tsconfig.json" />
+    <Content Include="src\components\lib.component.html" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\components\lib.component.ts" />
+    <TypeScriptCompile Include="src\components\lib.component.ts">
+      <DependentUpon>lib.component.html</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\components\lib.module.ts" />
     <TypeScriptCompile Include="src\index.ts" />
   </ItemGroup>
@@ -90,12 +96,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packaging\package.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="dist\package.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
