@@ -1,10 +1,10 @@
 ﻿import { NgModule, Component } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { LibModule } from "mylib";
+import { LibModule } from "quinn-test-lib";
 
 @Component({
     selector: 'app',
-    template: 'App'
+    template: 'App <lib-cmp></lib-cmp>'
 })
 export class AppComponent {
 }
